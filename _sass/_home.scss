@@ -14,6 +14,7 @@ $dark-font-color: #296476; // Blue
   height: 100vh;
   width: 100%;
   overflow: hidden;
+  font-family: 'Indie Flower', cursive;
 
   #nav-toggler {
     position: absolute;
@@ -60,7 +61,6 @@ $dark-font-color: #296476; // Blue
   #pic-container {
     background-color: $secondary-color;
     height: 100vh;
-    font-family: 'Indie Flower', cursive;
     color: $light-font-color;
     text-align: center;
 
@@ -81,7 +81,6 @@ $dark-font-color: #296476; // Blue
   }
 
   #intro {
-    font-family: 'Indie Flower', cursive;
     background-color: $primary-color;
     color: #296476;
     height: 100vh;
