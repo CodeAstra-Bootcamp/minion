@@ -1,0 +1,57 @@
+#blog {
+  .post {
+    margin-bottom: 6em;
+
+    .post-when {
+      text-align: center;
+      background-color: $secondary-color;
+      float: left;
+      color: $light-font-color;
+      height: 100px;
+      padding: 10px;
+      width: 100px;
+      border-radius: 50%;
+
+      .post-date {
+        font-size: 4em;
+        line-height: 1em;
+      }
+      .post-month {
+        font-size: 1.5em;
+        line-height: 1em;
+      }
+    }
+
+    .post-details {
+      margin-left: 130px;
+      h2 {
+        font-size: 2em;
+
+        a {
+          &, &:hover, &:visited, &:active {
+            color: $secondary-color;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .excerpt {
+        font-size: 1.5em;
+      }
+
+      a.read-more {
+        font-size: 1.5em;
+        float: right;
+
+        &, &:hover, &:visited, &:active {
+          color: $secondary-color;
+          text-decoration: none;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
