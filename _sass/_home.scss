@@ -1,3 +1,8 @@
+$primary-color: #FCDB65; // Yellow
+$secondary-color: #45BED8; // Blue
+$light-font-color: #FFFFFF; // White
+$dark-font-color: #296476; // Blue
+
 .vcenter {
   position: relative;
   top: 50%;
@@ -6,10 +11,10 @@
 
 #home {
   #pic-container {
-    background-color: #45BED8;
+    background-color: $secondary-color;
     height: 100vh;
     font-family: 'Indie Flower', cursive;
-    color: white;
+    color: $light-font-color;
     text-align: center;
 
     img {
@@ -30,9 +35,30 @@
 
   #intro {
     font-family: 'Indie Flower', cursive;
-    background-color: #FCDB65;
+    background-color: $primary-color;
     color: #296476;
     height: 100vh;
+
+    header {
+      text-align: right;
+      margin: 2em 4em 0 0;
+      a {
+        background-color: $secondary-color;
+        color: $light-font-color;
+        display: inline-block;
+        font-size: 0.9vw;
+        padding: 0.5em 1.5em;
+        border-radius: 50%;
+        margin-left: 1.5em;
+        text-decoration: none;
+        transition: all 0.3s ease-in;
+
+        &:hover {
+          background-color: lighter($secondary-color, 10%);
+          transform: scale(1.2);
+        }
+      }
+    }
 
     h1 {
       font-size: 3vw;
@@ -42,16 +68,16 @@
       font-size: 1.2vw;
     }
 
-    a {
+    .vcenter a {
       font-size: 1.2vw;
-      color: #296476;
-      border: 1px solid #296476;
+      color: $dark-font-color;
+      border: 1px solid $dark-font-color;
       border-radius: 4px;
       text-decoration: none;
       padding: 0.5em 1.5em;
       display: inline-block;
       margin-top: 1em;
-      transition: transform 0.3s ease-in;
+      transition: all 0.3s ease-in;
 
       &:hover {
         transform: scale(1.1);
