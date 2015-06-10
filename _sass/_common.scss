@@ -1,0 +1,92 @@
+html, body {
+  font-family: 'Indie Flower', cursive;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 135px;
+}
+
+header.nav {
+  height: 80px;
+  background-color: $primary-color;
+
+  a.brand {
+    padding: 5px 15px;
+    background-color: $secondary-color;
+    float: left;
+    color: $light-font-color;
+    text-decoration: none;
+
+    img {
+      height: 70px;
+    }
+
+    span {
+      display: inline-block;
+      font-size: 35px;
+      margin: 0 15px;
+      vertical-align: middle;
+    }
+  }
+
+  .ramp {
+    height: 80px;
+    width: 30px;
+    background-image: url('../images/home/ramp.png');
+    background-size: 100% 100%;
+    float: left;
+  }
+
+  nav {
+    float: right;
+    padding-right: 20px;
+
+    a {
+      background-color: $secondary-color;
+      color: $light-font-color;
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px 10px;
+      font-size: 20px;
+      line-height: 20px;
+      margin: 15px 5px;
+      width: 5em;
+      text-align: center;
+      border-radius: 10px;
+      transition: all 0.3s ease-in;
+
+      &:hover {
+        background-color: darken($secondary-color, 10%);
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $secondary-color;
+  color: $light-font-color;
+  font-size: 1.5em;
+  padding: 1.5em;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  a {
+    color: $light-font-color;
+    text-decoration: underline;
+
+    &:hover {
+      color: $light-font-color;
+    }
+  }
+}
+
+.vcenter {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

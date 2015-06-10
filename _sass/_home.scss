@@ -1,20 +1,8 @@
-$primary-color: #FCDB65; // Yellow
-$secondary-color: #45BED8; // Blue
-$light-font-color: #FFFFFF; // White
-$dark-font-color: #296476; // Blue
-
-.vcenter {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 #home {
   position: relative;
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  font-family: 'Indie Flower', cursive;
 
   #nav-toggler {
     position: absolute;
