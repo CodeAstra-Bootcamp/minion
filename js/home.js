@@ -8,4 +8,6 @@ $(document).ready(function() {
       $('#home header').addClass('active');
     }
   });
+
+  new WOW().init();
 });
