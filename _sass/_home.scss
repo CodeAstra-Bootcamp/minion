@@ -10,6 +10,53 @@ $dark-font-color: #296476; // Blue
 }
 
 #home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  #nav-toggler {
+    position: absolute;
+    top: 1vw;
+    right: 2vw;
+    color: $light-font-color;
+    z-index: 1000;
+    font-size: 1.5vw;
+    cursor: pointer;
+  }
+
+  header {
+    position: absolute;
+    top: 0;
+    right: -12vw;
+    text-align: left;
+    height: 100vh;
+    background-color: $secondary-color;
+    z-index: 999;
+    padding-top: 3vw;
+    width: 12vw;
+    transition: right 0.5s ease-in;
+
+    &.active {
+      right: 0;
+    }
+
+    a {
+      background-color: $secondary-color;
+      color: $light-font-color;
+      display: block;
+      font-size: 1.2vw;
+      padding: 0.5em 2em;
+      text-decoration: none;
+      transition: all 0.3s ease-in;
+
+      &:hover {
+        background-color: darken($secondary-color, 10%);
+        padding: 0.5em 1.5em;
+      }
+    }
+  }
+
   #pic-container {
     background-color: $secondary-color;
     height: 100vh;
@@ -39,26 +86,6 @@ $dark-font-color: #296476; // Blue
     color: #296476;
     height: 100vh;
 
-    header {
-      text-align: right;
-      margin: 2em 4em 0 0;
-      a {
-        background-color: $secondary-color;
-        color: $light-font-color;
-        display: inline-block;
-        font-size: 0.9vw;
-        padding: 0.5em 1.5em;
-        border-radius: 50%;
-        margin-left: 1.5em;
-        text-decoration: none;
-        transition: all 0.3s ease-in;
-
-        &:hover {
-          background-color: lighter($secondary-color, 10%);
-          transform: scale(1.2);
-        }
-      }
-    }
 
     h1 {
       font-size: 3vw;
